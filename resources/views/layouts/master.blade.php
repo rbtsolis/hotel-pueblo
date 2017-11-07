@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>@yield('title') | Hotel El Pueblo</title>
-  <link rel="stylesheet" href="/css/master.css" />
+  <link rel="stylesheet" href="{{ asset('css/master.css') }}" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="/css/font-awesome.css"/>
   <link rel="stylesheet" href="/css/ionicons.css"/>
@@ -14,20 +14,20 @@
 <body>
 
   <header class="header-page gradient-black">
-    <a href="/"><img src="/images/logo-pueblo.png" alt="Hotel el pueblo" /></a>
+    <a href="/"><img src="{{ asset('images/logo-pueblo.png') }}" alt="Hotel el pueblo" /></a>
     <li class="ion-drag white icon-menu pointer" id="icon-menu"></li>
   </header>
 
   <nav class="nav-menu text-center gradient-black hidden" id="nav-menu">
     <div class="menu-item gradient-black">
-      <a href="/" class="box-sizing">
+      <a href="{{ route('home') }}" class="box-sizing">
         <span>Página Principal</span> 
       </a>
     </div>
 
     <div class="menu-item gradient-black">
-      <a href="/reservaciones/" class="box-sizing">
-        <span>Reservaciones</span> 
+      <a href="{{ route('reservations.index') }}" class="box-sizing">
+        <span>Reservaciones</span>
       </a>
     </div>
 
@@ -67,7 +67,7 @@
     </div>
 
     <div class="footer-copy text-center">
-      © Hotel Pueblo Upala 2017, todos los derechos reservados
+      © Hotel Pueblo Upala {{ date("Y") }}, todos los derechos reservados
     </div>
 
   </footer>

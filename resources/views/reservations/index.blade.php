@@ -1,11 +1,6 @@
 @extends('layouts.master')
 
-@section('title')
-Hotel El pueblo upala
-@stop
-
 @section('content')
-
 <form class="reservation-form gradient-gold">
             
   <div class="input-form">
@@ -40,5 +35,4 @@ Hotel El pueblo upala
 
   <div class="gradient-gold btn-form text-center box-sizing pointer">Reservar</div>
 </form>
-
 @stop

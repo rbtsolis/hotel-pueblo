@@ -1,0 +1,155 @@
+@import 'nib'
+
+*
+    font-family 'Roboto', sans-serif
+    font-size 16px
+    margin 0
+    padding 0
+a
+ text-decoration none
+
+body 
+    background #232323
+
+input, textarea
+    border none 
+
+li
+    list-style none
+    
+.box-sizing
+ box-sizing border-box
+
+
+.btn-form
+    border-radius 4px
+    box-shadow rgba(0,0,0,0.75)
+    padding .3em
+    max-width 10em
+    margin 0 auto
+    box-sizing border-box
+
+    
+.footer-content
+    background #dfc99b
+    padding 1em
+    
+
+.footer-item
+  margin .5em
+
+.footer-border-bottom
+ border-bottom 1px solid rgba(0,0,0,0.2)
+ padding-botton 1em
+
+    
+
+.footer-copy
+    background #c9b07e
+    padding .5em 1em
+
+.gradient-black
+    background #262626
+    background linear-gradient(to bottom, #262626 0%,#161616 100%)
+
+.gradient-gold
+    background #ceb991
+    background linear-gradient(to bottom, #ceb991 0%,#a68e5f 100%)
+
+
+.header-page
+    
+    padding 1em /*1m ES EL EQUIVALENTE DEL FONT SIZE AGREGADO ANTERIORMENTE*/
+    text-align center
+    position relative
+
+.hidden
+    display none 
+
+.icon-menu
+    font-size 25px
+    position absolute
+    right .5em
+    top .5em
+
+.link 
+ color #23b3e5
+
+
+.menu-item 
+ color white
+ 
+ a
+  color #eccd8e
+  display block
+  padding .5em
+  margin .2em
+  width 100%
+
+span 
+    padding .25em .5em
+
+.active, a span:hover, .active span //la "coma" significa que a ambos se les aplica y el hober indica el mouse que se seleccione
+  background linear-gradient(to bottom, #ceb991 0%,#a68e5f 100%)
+  border-radius 3px
+  color #232323
+  font-weight 600
+  padding .25em .5em/*espacio de la letra con el cuadrito que la representa "Pagina principal"*/    
+
+.pointer
+    cursor pointer
+
+.reservation-form
+    border 3px solid #af9769
+    border-radius 4px
+    margin 2em auto
+    max-width 350px
+    padding 1em
+
+    input, textarea
+        background #232323
+        border-radius 3px
+        color white
+        padding .5em
+        width  95%
+
+    textarea
+        resize none
+
+    .input-form
+        margin 1em 0
+
+        label
+            text-align left
+
+.text-center
+    text-align center
+
+.white
+    color white
+
+
+
+
+@media screen and (min-width 768px)
+
+    
+    .header-page
+        text-align left
+
+    .menu-item
+            background none 
+            display inline-block
+
+    #icon-menu
+        display none
+
+    #nav-menu
+        display block !important
+
+@media screen and (min-width 1200px)      
+
+    #nav-menu
+        position absolute
+        right 1em
+        top .4em

@@ -11,6 +11,24 @@
 |
 */
 
-Route::get('/', function () {
+
+/*
+Route::get('/dashboard/', function () {
     return view('home');
 });
+
+
+Route::get('login/github', 'Auth\LoginController@redirectToProvider');
+Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
+*/
+
+Auth::routes();
+
+Route::get('/dashboard/', 'HomeController@index') -> name('dashboard');
+
+Route::get('/', function () {
+    return view('home');
+}) -> name('home');
+
+Route::resource('reservations', 'ReservationController');
+
